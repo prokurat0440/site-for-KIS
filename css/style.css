@@ -1,0 +1,378 @@
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTF55F.ttf");
+}
+@font-face {
+  font-family: "PTSansI";
+  src: url("../fonts/PTF56F.ttf");
+}
+@font-face {
+  font-family: "PTSansBold";
+  src: url("../fonts/PTF75F.ttf");
+}
+@font-face {
+  font-family: "PTSansIBold";
+  src: url("../fonts/PTF76F.ttf");
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PTSans";
+  color: rgb(175, 181, 190);
+  height: 100%;
+  background-image: url("./img/background1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(19, 31, 53);
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.cross {
+  position: fixed;
+  z-index: 10;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  display: none;
+  transition: 0.2s;
+}
+.cross:hover {
+  filter: brightness(2);
+}
+.cross-img {
+  width: 40px;
+  height: 40px;
+}
+.wrapper-header {
+  padding: 10px;
+  padding-right: 30px;
+  background-color: rgba(14, 19, 32, 0.7);
+}
+.wrapper-header-left {
+  position: relative;
+  top: 5%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.wrapper-header-left:hover {
+  filter: brightness(2);
+}
+.logo {
+  width: 40px;
+  height: 40px;
+}
+.btn-menu {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.btn-menu:hover {
+  filter: brightness(2);
+}
+.name {
+  font-family: "PTSansIBold";
+  font-size: 25px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.wrapper-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.block {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  padding: 30px;
+  padding-top: 10px;
+  overflow: hidden;
+  /* background-color: rgba(39,58,85, 0.7); */
+  background-color: rgba(27, 46, 73, 0.9);
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.block:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  box-shadow: inset 0 0 20px 0px rgb(19, 31, 54), 0 0 10px 0px rgb(24, 24, 24);
+  border-radius: 20px;
+  height: 200px;
+  padding-top: 20px;
+}
+.title-block {
+  font-family: "PTSansBold";
+  margin-bottom: 10%;
+}
+.text-block {
+  opacity: 0;
+  text-align: justify;
+}
+.block-content {
+  position: absolute;
+  z-index: 9;
+  max-width: 1000px;
+  width: 100%;
+  top: 15%;
+  left: 50%;
+  border-radius: 20px;
+  opacity: 0;
+  display: none;
+  /* background-color: rgba(39,58,85, 0.9); */
+  background-color: rgba(27, 46, 73, 0.9);
+}
+.text {
+  text-align: justify;
+  margin: 20px;
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+.switch {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.arrow > img {
+  width: 2em;
+}
+.switch1 {
+  margin-left: 20px;
+}
+.switch2 {
+  margin-right: 20px;
+}
+.switch1,
+.switch2 {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.arrow > img {
+  width: 20px;
+}
+.switch1:hover {
+  filter: brightness(2);
+}
+.switch2:hover {
+  filter: brightness(2);
+}
+.title-content {
+  font-family: "PTSansBold";
+  font-size: 1.3em;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.text-content {
+  text-indent: 12.5mm;
+  margin: 0;
+}
+.img-content {
+  text-align: center;
+}
+.underline {
+  text-decoration: underline;
+  font-family: "PTSansIBold";
+}
+.wrapper-menu {
+  position: absolute;
+  top: 13px;
+  right: 2%;
+}
+.navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  background-color: rgba(14, 19, 32, 0.8);
+  visibility: hidden;
+}
+.title-navigation {
+  font-family: "PTSansBold";
+  text-align: center;
+  margin-top: 10%;
+  font-size: 2em;
+}
+.list {
+  list-style-type: none;
+  margin-top: 15%;
+  padding-left: 0;
+  font-size: 1.3em;
+  margin-left: 15%;
+  margin-right: 5%;
+}
+.li {
+  margin-bottom: 5%;
+}
+.link {
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.link:hover {
+  color: #f5f5f5;
+  transition: 0.3s;
+}
+.link-internet {
+  text-decoration: underline;
+  color: white;
+  transition: 0.2s;
+}
+.link-internet:hover {
+  text-decoration: underline;
+  color: rgb(2, 7, 255);
+}
+.link-inside-document {
+  color: white;
+  transition: 0.2s;
+}
+.link-inside-document:hover {
+  text-decoration: underline;
+  color: rgb(175, 181, 190);
+}
+.footer {
+  height: 100px;
+  background-color: rgba(14, 19, 32, 0.7);
+  padding-top: 10px;
+  margin-top: 100px;
+}
+.wrapper-footer {
+  margin: 0 auto;
+}
+.items {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.items > a > img {
+  width: 30px;
+  margin: 5px;
+}
+.filterHover:hover {
+  filter: brightness(2);
+}
+.img-logo-bseu:hover {
+  filter: contrast(70%);
+}
+.text-copyright {
+  text-align: center;
+  font-size: 12px;
+}
+.link-vk {
+  text-decoration: none;
+  color: rgb(175, 181, 190);
+  transition: 0.3s;
+}
+.link-vk:hover {
+  text-decoration: underline;
+  color: white;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table-font-mini {
+  font-size: 0.6em;
+}
+.tr,
+.td {
+  border: 1px solid rgb(175, 181, 190);
+  vertical-align: top;
+}
+.td {
+  padding: 5px;
+}
+.td-text-center {
+  text-align: center;
+}
+.td-text-bold {
+  font-family: "PTSansBold";
+}
+.td-background-dark {
+  background-color: rgba(15, 27, 43, 0.9);
+}
+.td-background-light {
+  background-color: rgba(48, 86, 136, 0.8);
+}
+@media (max-width: 850px) {
+  .title-navigation {
+    font-size: 1.5em;
+  }
+  .list {
+    margin-left: 20%;
+    font-size: 1.1em;
+    list-style-type: none;
+  }
+}
+@media (max-width: 620px) {
+  .title-navigation {
+    font-size: 1.2em;
+    margin-top: 5%;
+  }
+  .navigation {
+    width: 100%;
+    height: 350px;
+  }
+  .list {
+    margin-top: 5%;
+    list-style-position: inside;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    list-style-type: decimal;
+    list-style-type: none;
+    margin-left: 7%;
+    margin-right: 2%;
+    font-size: 1em;
+  }
+  .li {
+    margin-bottom: 1%;
+  }
+  .text {
+    font-size: 1em;
+  }
+  .arrow > img {
+    width: 20px;
+  }
+}
+@media (max-width: 449px) {
+  .navigation {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 335px) {
+  .navigation {
+    width: 100%;
+    height: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper-logo {
+    margin-top: 3px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .logo {
+    margin-top: 0px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 410px) {
+  .wrapper-logo {
+    margin-left: 5px;
+  }
+}

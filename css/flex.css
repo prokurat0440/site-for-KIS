@@ -1,0 +1,17 @@
+.wrapper-header{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper-header-left{
+    display: flex;
+    align-items: flex-end;
+}
+.wrapper-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.switch{
+    display: flex;
+    justify-content: space-between;
+}
